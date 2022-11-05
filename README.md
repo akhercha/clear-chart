@@ -31,7 +31,8 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install require
 $ pip install -r requirements.txt
 ```
 
-Before going further, you now need to specify your read only API keys from Binance in a `.env` file located at the root of the project. It will contains two variables, `BINANCE_API_KEY` and `BINANCE_API_SECRET`:
+Before going further, you now need to specify your read only API keys from Binance in a `src/.env` file.
+It will contains two variables, `BINANCE_API_KEY` and `BINANCE_API_SECRET`:
 
 ```sh
 # .env
@@ -42,6 +43,19 @@ BINANCE_API_SECRET=ABX..pP
 ## Usage
 
 ```sh
-# Will show the chart of Sushi.
-python main.py SUSHIUSDT
+$ cd src
+$ python main.py -h
+
+    usage: main.py [-h] pair
+
+    description of script
+
+    positional arguments:
+    pair        binance pair to show (ex: SUSHIUSDT, ETHBTC..)
+
+    options:
+    -h, --help  show this help message and exit
+
+# Will show the chart of Sushi
+$ python main.py SUSHIUSDT
 ```
