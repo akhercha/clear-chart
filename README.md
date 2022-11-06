@@ -3,9 +3,10 @@
 Clear chart is a Python script allowing to show a synthetic and clearer version graph of a crypto currency pair from Binance:
 
 
-![ETH/BTC chart from Binance](ethbtc-chart.png "ETH/BTC chart from Binance")
+![ETH/BTC chart from Binance](.github/ethbtc-chart.png "ETH/BTC chart from Binance")
 
 There is still a lot to be done, it is experimental code.
+
 
 ## Installation
 
@@ -31,7 +32,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install require
 $ pip install -r requirements.txt
 ```
 
-Before going further, you now need to specify your read only API keys from Binance in a `src/.env` file.
+Before going further, you now need to specify your read only API keys from Binance in a `.env` file.
 It will contains two variables, `BINANCE_API_KEY` and `BINANCE_API_SECRET`:
 
 ```sh
@@ -43,7 +44,6 @@ BINANCE_API_SECRET=ABX..pP
 ## Usage
 
 ```sh
-$ cd src
 $ python main.py -h
 
     usage: main.py [-h] pair
@@ -55,6 +55,7 @@ $ python main.py -h
 
     options:
     -h, --help  show this help message and exit
+
 
 # Will show the chart of Sushi
 $ python main.py SUSHIUSDT
